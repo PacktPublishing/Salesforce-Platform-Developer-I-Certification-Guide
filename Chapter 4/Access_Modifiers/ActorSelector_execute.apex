@@ -1,0 +1,1 @@
+﻿ActorSelector.getActorsByMovie('Lethal Weapon');
