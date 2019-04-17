@@ -1,0 +1,1 @@
+﻿System.debug(MovieSelector.getAMovieTitle('Lethal Weapon'));

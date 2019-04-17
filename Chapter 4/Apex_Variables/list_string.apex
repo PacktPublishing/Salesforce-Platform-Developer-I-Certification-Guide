@@ -1,0 +1,1 @@
+﻿List<String> list1 = new List<String>{‘New York’,’Paris’};
