@@ -1,0 +1,1 @@
+﻿SELECT COUNT(Id), ShippingCountry FROM Account WHERE AnnualRevenue > 10000 GROUP BY ShippingCountry

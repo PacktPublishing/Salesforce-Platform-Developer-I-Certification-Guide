@@ -1,0 +1,1 @@
+﻿SELECT COUNT() FROM Account WHERE Name LIKE 'A%'

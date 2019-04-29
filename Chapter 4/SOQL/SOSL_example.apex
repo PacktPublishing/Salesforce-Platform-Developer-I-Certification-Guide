@@ -1,0 +1,1 @@
+﻿FIND {an} IN ALL FIELDS RETURNING Movie__c(Id, Name), Person__c(Name)

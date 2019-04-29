@@ -1,0 +1,1 @@
+﻿SELECT Name, (SELECT Name FROM Cast__r) FROM Movie__c

@@ -1,0 +1,1 @@
+﻿SELECT Id FROM Person__c WHERE Biography__c == null ALL ROWS

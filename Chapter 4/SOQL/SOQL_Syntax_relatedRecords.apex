@@ -1,0 +1,1 @@
+﻿SELECT Account.Name, (SELECT Contact.LastName FROM Account.Contacts) FROM Account

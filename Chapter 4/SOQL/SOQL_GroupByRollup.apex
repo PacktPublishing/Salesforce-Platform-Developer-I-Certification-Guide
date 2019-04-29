@@ -1,0 +1,1 @@
+﻿SELECT ShippingCountry, COUNT(Id) numberOfAccounts, Status FROM Account GROUP BY Rollup(ShippingCountry, Status)

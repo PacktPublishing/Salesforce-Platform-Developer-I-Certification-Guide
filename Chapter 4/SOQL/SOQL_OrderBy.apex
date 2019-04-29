@@ -1,0 +1,1 @@
+﻿SELECT Id, LastName, FirstName FROM Contact ORDER BY LastName ASC, FirstName DESC

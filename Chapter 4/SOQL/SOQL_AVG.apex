@@ -1,0 +1,1 @@
+﻿SELECT AVG(Amount) FROM Opportunity WHERE Account.Name = 'Acme'

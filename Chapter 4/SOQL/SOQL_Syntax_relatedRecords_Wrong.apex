@@ -1,0 +1,1 @@
+﻿SELECT Account.Name, (SELECT Amount, (SELECT UnitPrice FROM OpportunityLineItems) FROM Opportunities) FROM Account

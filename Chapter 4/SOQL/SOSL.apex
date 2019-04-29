@@ -1,0 +1,1 @@
+﻿FIND {search} IN NAME FIELDS

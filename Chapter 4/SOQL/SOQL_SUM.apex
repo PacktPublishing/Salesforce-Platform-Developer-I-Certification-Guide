@@ -1,0 +1,1 @@
+﻿SELECT CampaignId, SUM(Amount) totalAmount FROM Opportunity GROUP BY CampaignId

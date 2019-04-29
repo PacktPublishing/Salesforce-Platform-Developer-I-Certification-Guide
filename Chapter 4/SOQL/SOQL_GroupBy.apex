@@ -1,0 +1,1 @@
+﻿SELECT ShippingCountry, SUM(AnnualRevenue) totalRevenue FROM Account GROUP BY ShippingCountry

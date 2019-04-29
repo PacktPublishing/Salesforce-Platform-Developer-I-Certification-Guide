@@ -1,0 +1,1 @@
+﻿List<Account> lstAccounts = [SELECT Name FROM Account WHERE Revenue > 10000 ORDER BY Revenue DESC];
