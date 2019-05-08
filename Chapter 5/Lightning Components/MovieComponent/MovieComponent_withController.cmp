@@ -1,0 +1,1 @@
+﻿<aura:component controller="SearchMovie" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:actionOverride">

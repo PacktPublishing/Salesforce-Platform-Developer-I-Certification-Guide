@@ -1,0 +1,4 @@
+﻿<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+	<aura:attribute name="message" type="String" default="World" />
+    <p>Hello {!v.message}</p>
+</aura:component>

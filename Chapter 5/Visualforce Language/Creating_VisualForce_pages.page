@@ -1,0 +1,15 @@
+<apex:page sideBar="false" tabStyle="Movie__c">
+    <style type="text/css">
+        .container{
+            width: 1080px;
+            margin: 20px auto;
+        }
+    </style>
+    <apex:outputPanel layout="block" styleClass="container">
+        <apex:pageBlock title="This is my first Visualforce page">
+            <apex:pageBlockSection title="Hello">
+                Hello World
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:outputPanel>
+</apex:page>

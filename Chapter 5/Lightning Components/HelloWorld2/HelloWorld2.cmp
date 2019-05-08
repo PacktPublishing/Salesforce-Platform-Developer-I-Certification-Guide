@@ -1,0 +1,3 @@
+﻿<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+ <c:MovieComponent message="TestMessage" />
+</aura:component>

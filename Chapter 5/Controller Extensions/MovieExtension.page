@@ -1,0 +1,29 @@
+﻿<apex:page standardController="Movie__c" extensions="MovieExtension" lightningStylesheets="true">
+ <style type="text/css">
+ .box-picture {
+ box-shadow: 6px 6px rgba(20,20,20,.2);
+ border: 1px solid #fff;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+ }
+ </style>
+ <apex:pageBlock>
+     <apex:pageBlockSection title="Details movie {!theMovie.Name}" collapsible="false" columns="2">
+         <apex:outputField value="{!theMovie.Genre__c}" />
+         <apex:outputField value="{!theMovie.Runtime__c}" />
+         <apex:outputField value="{!theMovie.Director__c}" />
+         <apex:outputField value="{!theMovie.Release_Date__c}" />
+     </apex:pageBlockSection>
+     <apex:pageBlockSection title="The Cast" columns="2">
+         <apex:pageBlockTable value="{!theMovie.Cast__r}" var="actor">
+             <apex:column value="{!actor.Name}" />
+             <apex:column value="{!actor.Person__r.Name}" />
+             <apex:column value="{!actor.Rating__c}" />
+         </apex:pageBlockTable>
+         <apex:outputPanel layout="block" style="text-align: center;">
+             <apex:image styleClass="box-picture" value="{!theMovie.Cover_Url__c}" height="400" />
+         </apex:outputPanel>
+     </apex:pageBlockSection>
+ </apex:pageBlock>
+</apex:page>

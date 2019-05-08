@@ -1,0 +1,6 @@
+<apex:page id="ExampleSTD" standardController="Movie__c">
+    <apex:form>
+        <apex:inputField value="{!Movie__c.Name}" /><br/>
+        <apex:commandButton action="{!Save}" value="Save" />
+    </apex:form>
+</apex:page>

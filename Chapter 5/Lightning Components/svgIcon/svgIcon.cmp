@@ -1,0 +1,12 @@
+﻿<aura:component description="svgIcon">
+    <aura:attribute name="svgPath" default="" type="String" description="the icon path in the static resource, used in the SVG use tag" />
+    <aura:attribute name="name" default="" type="String" description="Name of the  icon symbol" />
+    <aura:attribute name="class" default="" type="String" description="the style class of the SVG tag" />
+    <aura:attribute name="containerClass" default="" type="String" description="Container class name for span container of icon" />
+    <aura:attribute name="category" default="" type="String" description="Category of icon- action, standard, utility etc." />
+    <aura:attribute name="size" default="" type="String" description="Size of icon-- small, medium, large" />
+    <aura:attribute name="assistiveText" default="" type="String" description="Description name of icon" />
+    <span aura:id="container" class="{!v.containerClass}">
+        <span aura:id="assistiveText" class="slds-assistive-text">{!v.assistiveText}</span>
+    </span>
+</aura:component>

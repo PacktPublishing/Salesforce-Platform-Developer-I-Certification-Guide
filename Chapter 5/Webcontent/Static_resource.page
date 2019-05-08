@@ -1,0 +1,4 @@
+﻿<apex:page standardStylesheets="false">
+ <apex:includeScript value="{!URLFOR($Resource.myStaticResource, '/js/customJavascript.js')}" />
+ <apex:stylesheet value="{!URLFOR($Resource.myStaticResource, '/css/customCSS.css')}" />
+</apex:page>

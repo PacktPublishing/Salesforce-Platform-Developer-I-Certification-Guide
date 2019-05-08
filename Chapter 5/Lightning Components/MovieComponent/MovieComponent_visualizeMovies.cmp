@@ -1,0 +1,18 @@
+﻿<aura:if isTrue="{!and(v.search, v.numberOfMovies == 0)}">
+	<div class="noMovies">No movies found</div>
+</aura:if>
+<aura:if isTrue="{!and(v.search, v.numberOfMovies != 0)}">
+	<div class="movieSelection">
+		<aura:iteration items="{!v.lstMovies}" var="movie">
+			<div class="slds-grid slds-m-vertical_small">
+				<div class="slds-col slds-size--2-of-12 slds-text-align_center">
+					<img src="{!'https://image.tmdb.org/t/p/original' + movie.poster_path}" class="movieImage" />
+				</div>
+				<div class="slds-col slds-size--10-of-12">
+					<h1>{!movie.original_title}</h1>
+					<p>{!movie.overview}</p>
+				</div>
+			</div>
+		</aura:iteration>
+	</div>
+</aura:if>

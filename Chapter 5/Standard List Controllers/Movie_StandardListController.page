@@ -1,0 +1,9 @@
+﻿<apex:page standardController="Movie__c" recordSetVar="movies" tabStyle="Movie__c" lightningStylesheets="true">
+    <apex:pageBlock>
+        <apex:pageBlockTable value="{!movies}" var="aMovie">
+            <apex:column value="{!aMovie.Name}" />
+            <apex:column value="{!aMovie.Genre__c}" />
+            <apex:column value="{!aMovie.Runtime__c}" />
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

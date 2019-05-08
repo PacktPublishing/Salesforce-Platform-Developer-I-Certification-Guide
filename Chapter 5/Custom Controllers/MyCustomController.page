@@ -1,0 +1,12 @@
+﻿<apex:page controller="MyCustomController" tabStyle="Movie__c">
+    <apex:pagemessages/>
+    <apex:form>
+        <apex:pageBlock title="Hello {!$User.FirstName}!">
+            This is your new page for the {!name} controller. <br/>
+            Change Movie Details: <p></p>
+            <apex:inputField value="{!movie.name}"/> <br />
+            <apex:inputField value="{!movie.Genre__c}" /><p></p>
+            <apex:commandButton action="{!save}" value="Save New Movie Title"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
