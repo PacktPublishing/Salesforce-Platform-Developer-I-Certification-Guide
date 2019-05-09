@@ -1,0 +1,49 @@
+﻿<apex:page standardController="Movie__c" lightningStylesheets="true" extensions="MovieExtension">
+   <!-- some extra css to make it nice and neat -->
+   <style type="text/css">
+       .txaDescription {
+           width: 100%;
+           resize: none;
+       }
+       .pnlCenter{
+           text-align: center;
+       }
+   </style>
+   <apex:outputPanel>
+       <apex:form>
+           <apex:pageMessages />
+           <apex:pageBlock title="{!Movie__c.Name}">
+               <!-- you can separate your fields in 2 columns with the attribute columns -->
+               <apex:pageBlockSection title="Movie Information" columns="2">
+                   <apex:pageBlockSectionItem>
+                       <apex:outputLabel value="{!$ObjectType.Movie__c.fields.Name.Label}" />
+                       <apex:inputField value="{!Movie__c.Name}" />
+                   </apex:pageBlockSectionItem>
+                   <apex:pageBlockSectionItem>
+                       <apex:outputLabel value="{!$ObjectType.Movie__c.fields.Release_Date__c.Label}" />
+                       <apex:inputField value="{!Movie__c.Release_Date__c}" />
+                   </apex:pageBlockSectionItem>
+                   <apex:pageBlockSectionItem>
+                       <apex:outputLabel value="{!$ObjectType.Movie__c.fields.Genre__c.Label}" />
+                       <apex:inputField value="{!Movie__c.Genre__c}" />
+                   </apex:pageBlockSectionItem>
+                   <apex:pageBlockSectionItem>
+                       <apex:outputLabel value="{!$ObjectType.Movie__c.fields.Runtime__c.Label}" />
+                       <apex:inputField value="{!Movie__c.Runtime__c}" />
+                   </apex:pageBlockSectionItem>
+               </apex:pageBlockSection>
+               <!-- this demonstrates you how you can add another pageblock section with 1 column -->
+               <apex:pageBlockSection columns="1" title="{!$ObjectType.Movie__c.fields.Description__c.Label}" collapsible="false">
+                   <apex:pageBlockSectionItem>
+                       <apex:inputField value="{!Movie__c.Description__c}" styleClass="txaDescription" />
+                   </apex:pageBlockSectionItem>
+               </apex:pageBlockSection>
+           </apex:pageBlock>
+           <!-- an output panel that acts like a div-tag in your HTML. An outputpanel without the layout attribute acts like the html span-tag -->
+           <apex:outputPanel layout="block" styleClass="pnlCenter">
+               <!-- the save action is coming from the standard controller -->
+               <apex:commandButton value="Save" action="{!submitMovie}" />
+           </apex:outputPanel>
+       </apex:form>
+   </apex:outputPanel>
+</apex:page>
