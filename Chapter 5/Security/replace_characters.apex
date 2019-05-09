@@ -1,0 +1,1 @@
+﻿String sQuery = 'SELECT Id FROM User WHERE isActive = ' + myVariable

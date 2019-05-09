@@ -1,0 +1,1 @@
+﻿Map<Id, Account> mapAccounts = (Map<Id, Account>) Trigger.newMap;

@@ -1,0 +1,1 @@
+﻿List<Account> lstAccounts = (List<Account>) Trigger.old; // the list 'SObject' is casted to a list with 'Account' records

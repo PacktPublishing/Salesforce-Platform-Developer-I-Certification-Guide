@@ -1,0 +1,1 @@
+﻿Integer iNumberRecords = Trigger.size;
