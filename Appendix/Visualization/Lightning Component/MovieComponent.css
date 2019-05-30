@@ -1,0 +1,38 @@
+/**
+ * Created by Gunther on 11/03/2019.
+ */
+.THIS .centeredPanel {
+    background: white;
+    width: 80em;
+    height: 40em;
+    margin: 5em auto 0 auto;
+    padding: 2em;
+    border-radius: 1em;
+}
+.THIS .centeredButtonLayer {
+    margin-top: 1em;
+    text-align: center;
+}
+.THIS .movieSelection{
+    margin-top: 1rem;
+    height: 20rem;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    overflow: auto;
+    padding: .5rem;
+}
+.THIS H1{
+    font-size: 2em;
+}
+.THIS .inputCheckbox{
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: .6rem .5rem 0rem 0rem;
+}
+.THIS .movieImage{
+    height: 100px;
+    float: left;
+}

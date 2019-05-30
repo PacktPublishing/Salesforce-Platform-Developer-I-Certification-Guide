@@ -1,0 +1,54 @@
+<aura:component controller="SearchMovie" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader,lightning:actionOverride" access="global">
+    <aura:attribute name="message" type="String" default="World" />
+    <aura:attribute name="SearchCriteria" type="String" default="" description="Definition of the search criteria of the user" />
+    <aura:attribute name="lstMovies" type="List" description="the list with movies, received from the webservice" />
+    <aura:attribute name="lstSelectedMovies" type="List" description="the list with movies the user selected to insert into the database" />
+    <aura:attribute name="search" type="Boolean" default="false" description="Did the user already clicked on the search function or not ?" />
+    <aura:attribute name="numberOfMovies" type="Integer" default="0" description="the number of movies that is returned (we cannot use the list.size parameter in a lightning component as we can use in a visualforce page)" />
+
+
+    <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <div class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick="{!c.closeModal}">
+                    <c:svgIcon svgPath="/resource/slds_283/utility-sprite/svg/symbols.svg#close" category="utility" size="small" name="close" class="slds-button__icon slds-button__icon_large" />
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Insert new movie</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap">
+                <lightning:input name="searchField" label="" value="{!v.SearchCriteria}" class="slds-size_1-of-1"/>
+                <div class="slds-size--1-of-1 slds-text-align_center slds-m-top_small">
+                    <lightning:button label="Search" variant="brand" onclick="{!c.searchMovie}" />
+                </div>
+
+
+                <aura:if isTrue="{!and(v.search, v.numberOfMovies == 0)}">
+                    <div class="noMovies">No movies found</div>
+                </aura:if>
+                <aura:if isTrue="{!and(v.search, v.numberOfMovies != 0)}">
+                    <div class="movieSelection">
+                        <aura:iteration items="{!v.lstMovies}" var="movie">
+                            <div class="slds-grid slds-m-vertical_small">
+                                <div class="slds-col slds-size--2-of-12 slds-text-align_center">
+                                    <img src="{!'https://image.tmdb.org/t/p/original' + movie.poster_path}" class="movieImage" />
+                                </div>
+                                <div class="slds-col slds-size--10-of-12">
+                                    <ui:inputCheckbox value="{!movie.bIsSelected}" class="slds-checkbox inputCheckbox" />
+                                    <h1>{!movie.original_title}</h1>
+                                    <p>{!movie.overview}</p>
+                                </div>
+                            </div>
+                        </aura:iteration>
+                    </div>
+                </aura:if>
+            </div>
+            <div class="slds-modal__footer">
+                <aura:if isTrue="{!and(v.search, v.numberOfMovies != 0)}">
+                    <lightning:button label="insert movie" variant="brand" onclick="{!c.insertMovies}" />
+                </aura:if>
+            </div>
+        </div>
+    </div>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+</aura:component>
