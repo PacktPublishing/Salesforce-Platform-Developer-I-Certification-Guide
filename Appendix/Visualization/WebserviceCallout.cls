@@ -1,7 +1,7 @@
 public with sharing class WebserviceCallout {
 
     private final static String authToken = '<YOUR_API_KEY_HERE>';
-    private final static String sEndpoint = 'callout:The_movie_DB';
+    private final static String sEndpoint = 'callout:The_Movie_DB';
     private final static Integer iTimeout = 20000;
     private final static Integer NUMBER_OF_RESULTS = 5;
 
