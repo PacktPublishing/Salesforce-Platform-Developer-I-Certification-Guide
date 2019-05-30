@@ -22,7 +22,7 @@
 	}
 
 
-	private static List<MovieResponse> constructMovies(String sResponse){
+	/*private static List<MovieResponse> constructMovies(String sResponse){
 		List<MovieResponse> lstMovies = new List<MovieResponse>();
 		if (sResponse != null){
 			JSONParser theParser = JSON.createParser(sResponse);
@@ -36,7 +36,7 @@
 		}
 
 		return lstMovies;
-	}
+	}*/
 
 
 }
