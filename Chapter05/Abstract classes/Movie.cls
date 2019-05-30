@@ -1,9 +1,9 @@
-﻿public abstract class Movie {
+public abstract class Movie {
 
-	public String movieType = '';
+	public Id movieId = null;
 
-	public Movie(String sMovieType){
-		this.movieType = sMovieType;
+	public Movie(Id idMovieId){
+		this.movieId = idMovieId;
 	}
 
 	public Movie__c selectMovie(){
