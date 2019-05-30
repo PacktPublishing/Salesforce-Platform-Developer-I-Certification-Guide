@@ -13,8 +13,7 @@ public class ActionMovie extends Movie{
         }
     }
 
-    public List<Movie__c> getActionMovies(){
-        return this.selectMovies();
+    public Movie__c getActionMovies(){
+        return this.selectMovie();
     }
 }
-
