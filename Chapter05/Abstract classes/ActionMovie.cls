@@ -1,7 +1,7 @@
-﻿public class ActionMovie extends Movie{
+public class ActionMovie extends Movie{
 
     public ActionMovie(){
-        super(‘Action’);
+        super('Action');
     }
 
     public override void insertMovie(){
