@@ -5,7 +5,7 @@
     	private final static Integer iTimeout = 20000;
 
 
-	private static String searchCallout(String sParameter, String sResource){
+	public static String searchCallout(String sParameter, String sResource){
 		String theEndpoint = sEndpoint + '/search/' + sResource + '?api_key=' + authToken;
 
 		HttpRequest theRequest = new HttpRequest();
