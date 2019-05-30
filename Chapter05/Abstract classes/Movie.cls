@@ -1,14 +1,14 @@
 public abstract class Movie {
 
-	public Id movieId = null;
+	public String movieType = '';
 
-	public Movie(Id idMovieId){
-		this.movieId = idMovieId;
+	public Movie(String sMovieType){
+		this.movieType = sMovieType;
 	}
 
-	public Movie__c selectMovie(){
-		if (this.movieId != null){
-			List<Movie__c> lstMovies = [SELECT Id, Name, (SELECT Id, Person__r.Name FROM Cast__r) FROM Movie__c WHERE Id = :this.movieId];
+	protected Movie__c selectMovie(){
+		if (this.movieType != null){
+			List<Movie__c> lstMovies = [SELECT Id, Name, (SELECT Id, Person__r.Name FROM Cast__r) FROM Movie__c WHERE Genre__c = :this.movieType];
 			if (lstMovies.size() == 1){
 				// check if there is a record
 				return lstMovies[0];
