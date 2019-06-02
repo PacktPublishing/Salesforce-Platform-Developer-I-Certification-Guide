@@ -7,7 +7,7 @@ private with sharing class MovieExtensionTest {
 			Name = 'Independence day',
 			Description__c = 'Independence Day is an American science fiction action film directed and co-written by Roland Emmerich',
 			Cover_Url__c = 'https://image.tmdb.org/t/p/original/bqLlWZJdhrS0knfEJRkquW7L8z2.jpg',
-			Genre__c = 'Action;Adventure;Science Fiction'
+			Genre__c = 'Action;Adventure;Sci-Fi'
 		);
 
 		insert aTestMovie;
