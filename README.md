@@ -1,8 +1,8 @@
 # Salesforce Platform Developer I Certification Guide
 
-<a href="https://www.packtpub.com/in/business/salesforce-platform-developer-i-certification-guide?utm_source=github&utm_medium=repository&utm_campaign="><img src="" alt="Salesforce Platform Developer I Certification Guide" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/in/business/salesforce-platform-developer-i-certification-guide?utm_source=github&utm_medium=repository&utm_campaign="><img src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781789802078_cover.png" alt="Salesforce Platform Developer I Certification Guide" height="256px" align="right"></a>
 
-This is the code repository for [Salesforce Platform Developer I Certification Guide](https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781789802078_cover.png), published by Packt.
+This is the code repository for [Salesforce Platform Developer I Certification Guide](https://www.packtpub.com/in/business/salesforce-platform-developer-i-certification-guide?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
 
 **Expert tips, techniques, and mock tests for the Platform Developer I (DEV501) certification exam**
 
