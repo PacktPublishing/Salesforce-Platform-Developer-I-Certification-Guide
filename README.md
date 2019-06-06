@@ -47,7 +47,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ### Related products
 * Learning Salesforce Lightning Application Development [[Packt]](https://www.packtpub.com/application-development/learning-salesforce-lightning-application-development?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1787124673)
 
-* Salesforce CRM - The Definitive Admin Handbook - Fifth Edition [[Packt]](https://www.packtpub.com/business/salesforce-crm-definitive-admin-handbook-fifth-edition?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1786468964)
+* Salesforce CRM - The Definitive Admin Handbook - Fifth Edition [[Packt]](https://www.packtpub.com/business/salesforce-crm-definitive-admin-handbook-fifth-edition?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1789619785)
 
 ## Get to Know the Author
 **Jan Vandevelde**
