@@ -24,7 +24,7 @@ If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1789
 alt="https://www.packtpub.com/" border="5" /></a>
 
 ## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter02.
+All of the code is organized into folders. For example, Chapter04.
 
 The code will look like the following:
 ```
@@ -35,7 +35,7 @@ closeModal: function(component, event, helper){
 **Following is what you need for this book:**
 The Salesforce Platform Developer I Certification Guide is for you if you want to learn how to develop and deploy business logic and user interfaces using the capabilities of the Lightning Platform. No prior knowledge of Apex programming is required.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 2-8).
+With the following software and hardware list you can run all code files present in the book (Chapter 4-7).
 ### Software and Hardware List
 | No | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
