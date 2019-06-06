@@ -35,7 +35,7 @@ closeModal: function(component, event, helper){
 **Following is what you need for this book:**
 The Salesforce Platform Developer I Certification Guide is for you if you want to learn how to develop and deploy business logic and user interfaces using the capabilities of the Lightning Platform. No prior knowledge of Apex programming is required.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-).
+With the following software and hardware list you can run all code files present in the book (Chapter 2-8).
 ### Software and Hardware List
 | No | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
