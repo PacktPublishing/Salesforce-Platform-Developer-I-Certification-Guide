@@ -44,7 +44,7 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/9781789802078_ColorImages.pdf).
 
-### Errata
+## Errata
 Page 286, para 1: In this class, I defined only a string to demonstrate the usability of the abstract class:
 ```
 public Movie(String sMovieType){
@@ -56,6 +56,15 @@ _Should be_
 public Movie(Id idMovieId){
     this.movieId = idMovieId;
 }
+```
+
+Page 285, last para: Like any other class, we give the class a name:
+```
+private String movieType = '';
+```
+_Should be_
+```
+private Id movieId = null;
 ```
 
 ### Related products
