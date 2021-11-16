@@ -44,6 +44,20 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/9781789802078_ColorImages.pdf).
 
+### Errata
+Page 286, para 1: In this class, I defined only a string to demonstrate the usability of the abstract class:
+```
+public Movie(String sMovieType){
+    this.movieType = sMovieType;
+}
+```
+_Should be_
+```
+public Movie(Id idMovieId){
+    this.movieId = idMovieId;
+}
+```
+
 ### Related products
 * Learning Salesforce Lightning Application Development [[Packt]](https://www.packtpub.com/application-development/learning-salesforce-lightning-application-development?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1787124673)
 
